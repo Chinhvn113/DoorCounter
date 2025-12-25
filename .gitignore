@@ -1,0 +1,4 @@
+_pycache__/
+best_lowres.torchscript
+tracking/
+config.json
