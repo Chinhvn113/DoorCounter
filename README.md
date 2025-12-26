@@ -4,7 +4,7 @@
 
 ## 📖 Executive Summary
 
-The **Edge Person Counting System** is a high-performance, edge-computing solution designed to perform real-time people counting and zone-based monitoring. Utilizing **YOLOv8** for object detection and a custom polygon-based tracking engine, this service processes video streams locally and transmits actionable event data (including visual snapshots) to the AutoProcAI Cloud via HTTP Push Alerts.
+The **Edge Person Counting System** is a high-performance, edge-computing solution designed to perform real-time people counting and zone-based monitoring. Utilizing **YOLOv11** for object detection and a custom polygon-based tracking engine, this service processes video streams locally and transmits actionable event data (including visual snapshots) to the AutoProcAI Cloud via HTTP Push Alerts.
 
 Designed for industrial reliability, the system features threaded video buffering, auto-reconnection logic, and bandwidth-efficient event notification.
 
@@ -12,7 +12,7 @@ Designed for industrial reliability, the system features threaded video bufferin
 
 ## 🚀 Key Features
 
-*   **Real-Time Edge Processing:** Low-latency detection using YOLOv8 models.
+*   **Real-Time Edge Processing:** Low-latency detection using YOLOv11 models.
 *   **Polygon Zone Logic:** precise entry/exit counting based on user-defined virtual tripwires (regions).
 *   **Resilient Video Pipeline:**
     *   Threaded `CameraBuffer` ensures processing never blocks frame acquisition.
@@ -200,5 +200,6 @@ The application logs to `stdout` (Console) by default.
 *   **ERROR:** API failures, File missing, Critical crashes.
 
 *Recommendation:* Redirect output to a log file or use a service like `systemd` or `fluentd` to aggregate logs in production.
+
 
 
