@@ -1,10 +1,10 @@
-# AutoProcAI Door Counter Backend (Edge Service)
+# Edge Person Counting System (Edge Service)
 
 ![Version](https://img.shields.io/badge/version-2.1.0-blue.svg) ![Python](https://img.shields.io/badge/python-3.9%2B-green.svg) ![Status](https://img.shields.io/badge/status-production--ready-success.svg)
 
 ## 📖 Executive Summary
 
-The **AutoProcAI Door Counter Backend** is a high-performance, edge-computing solution designed to perform real-time people counting and zone-based monitoring. Utilizing **YOLOv8** for object detection and a custom polygon-based tracking engine, this service processes video streams locally and transmits actionable event data (including visual snapshots) to the AutoProcAI Cloud via HTTP Push Alerts.
+The **Edge Person Counting System** is a high-performance, edge-computing solution designed to perform real-time people counting and zone-based monitoring. Utilizing **YOLOv8** for object detection and a custom polygon-based tracking engine, this service processes video streams locally and transmits actionable event data (including visual snapshots) to the AutoProcAI Cloud via HTTP Push Alerts.
 
 Designed for industrial reliability, the system features threaded video buffering, auto-reconnection logic, and bandwidth-efficient event notification.
 
@@ -201,10 +201,4 @@ The application logs to `stdout` (Console) by default.
 
 *Recommendation:* Redirect output to a log file or use a service like `systemd` or `fluentd` to aggregate logs in production.
 
----
 
-## ⚖️ License & Disclaimer
-
-**Copyright © 2025 AutoProcAI.**
-
-*This software is provided "as is". While designed for industrial use, accuracy depends on environmental factors (lighting, camera angle). It is not intended for safety-critical applications.*
