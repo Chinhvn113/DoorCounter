@@ -86,7 +86,7 @@ Controls hardware connection, AI parameters, and API credentials.
 ```json
 {
   "auto_start_source": "rtsp://user:pass@192.168.1.10:554/stream",
-  "model_path": "yolov8n.pt",
+  "model_path": "best_lowres_ncnn_model",
   "resolution": [1280, 720],
   "default_settings": {
     "conf_threshold": 0.45,
@@ -200,6 +200,7 @@ The application logs to `stdout` (Console) by default.
 *   **ERROR:** API failures, File missing, Critical crashes.
 
 *Recommendation:* Redirect output to a log file or use a service like `systemd` or `fluentd` to aggregate logs in production.
+
 
 
 
