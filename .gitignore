@@ -1,4 +1,5 @@
-_pycache__/
+__pycache__/
 best_lowres.torchscript
 tracking/
 config.json
+r.txt
