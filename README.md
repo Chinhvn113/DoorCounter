@@ -138,7 +138,7 @@ When an event triggers, the backend sends a **POST** request with `Content-Type:
 To start the backend service:
 
 ```bash
-python backend.py
+python backend_alert.py
 ```
 
 ### Startup Behavior
@@ -166,7 +166,7 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0
 
 COPY . .
 
-CMD ["python", "backend.py"]
+CMD ["python", "backend_alert.py"]
 ```
 
 **Run command:**
@@ -200,6 +200,7 @@ The application logs to `stdout` (Console) by default.
 *   **ERROR:** API failures, File missing, Critical crashes.
 
 *Recommendation:* Redirect output to a log file or use a service like `systemd` or `fluentd` to aggregate logs in production.
+
 
 
 
